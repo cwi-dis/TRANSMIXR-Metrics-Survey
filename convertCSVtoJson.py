@@ -5,16 +5,36 @@ import json
 filename = 'Survey-Info.csv'
 # The includeProp lets the parse know which data values and their types to process
 # These are the required field.
+# includeProp = {
+#   "Name":"String",
+#   "Authors": "MultiSelect",
+#   "Bibtex": "String",
+#   "DOI": "String",
+#   "Year": "Timeline",
+#   # These are additional fields
+#   "Paper Type": "MultiSelect",
+#   "Type of Visualization shown": "MultiSelect",
+#   "Use of Color": "MultiSelect",
+# }
+
 includeProp = {
   "Name":"String",
   "Authors": "MultiSelect",
   "Bibtex": "String",
   "DOI": "String",
   "Year": "Timeline",
+  "ID" : "MultiSelect",
+  "Venue": "MultiSelect",
+  "XR Type": "MultiSelect",
+  "Main category": "MultiSelect",
+  "Secondary category": "MultiSelect",
+  "Metric Types": "MultiSelect"
   # These are additional fields
-  "Paper Type": "MultiSelect",
-  "Type of Visualization shown": "MultiSelect",
-  "Use of Color": "MultiSelect",
+  # The ones below are from the demo file and should be replaced when using your
+  # # own data.
+  # "Paper Type": "MultiSelect",
+  # "Type of Visualization shown": "MultiSelect",
+  # "Use of Color": "MultiSelect",
 }
 
 with open(filename, encoding='utf-8-sig') as csvfile:

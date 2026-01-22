@@ -193,8 +193,8 @@
 	<Button class="!p-2" on:click={() => open = !open}><FilterSolid class="w-5 h-5" /></Button>
 	{/if}
 	<NavBrand href="/" class="m-2">
-	<img src="/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-	<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">IADesign.Space</span>
+	<!-- img src="/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" /-->
+	<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">TRANSMIXR Metrics Survey</span>
 	</NavBrand>
 	<div class="flex items-center">
 		<NavUl>
@@ -292,7 +292,7 @@
 		}
 
 		:global(::-webkit-scrollbar-thumb) {
-			background-color: #c026d3;
+			background-color: #26ACD3;
 	
 		}
 

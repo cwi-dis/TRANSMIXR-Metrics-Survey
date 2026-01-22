@@ -55,7 +55,7 @@
 		if (year < $filters.timeFilters.start || year > $filters.timeFilters.end) {
 			return '#4A4A4D';
 		} else {
-			return '#c026d3';
+			return '#d32647';
 		}
 	};
 </script>
