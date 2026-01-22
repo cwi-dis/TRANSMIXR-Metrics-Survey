@@ -10,6 +10,6 @@ import { svelte } from "@sveltejs/vite-plugin-svelte";
 // });
 
 export default defineConfig({
-  base: '/TRANSMIXR-Metrics-Survey/',
+  base: '/./',
   plugins: [svelte()],
 });
