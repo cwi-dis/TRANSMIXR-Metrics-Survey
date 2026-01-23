@@ -14,4 +14,3 @@ export default defineConfig({
   plugins: [svelte()],
   base: '/TRANSMIXR-Metrics-Survey/'  // <-- set this to your repo name
 });
-
