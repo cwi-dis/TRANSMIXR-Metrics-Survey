@@ -1,7 +1,5 @@
 <script>
 
-	import { onMount } from 'svelte';
-  import { initUrlParams } from './urlParamStore';
   import {Pane, Splitpanes} from 'svelte-splitpanes';
 	import IconButton from '@smui/icon-button';
 	import PaperCard from './components/paperCard.svelte';
@@ -14,10 +12,13 @@
 	import dataMeta from './data/survey-data.json';
 	import AddEntry from './components/addEntry.svelte';
 	import { filters, categoryFilters, timeFilters } from './filterStore';
-
-  onMount(() => {
-    initUrlParams();
-  });
+	
+	import { onMount } from 'svelte';
+  	import { initUrlParams } from './urlParamStore';
+ 	onMount(() => {
+    		initUrlParams();
+  	});
+ 
 	import surveys from './data/other-surveys.json';
 
 

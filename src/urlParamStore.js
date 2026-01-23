@@ -16,7 +16,7 @@
 
 import { writable } from 'svelte/store';
 
-export const urlParams = writable(null);
+export const urlParams = writable(new URLSearchParams());
 
 export function initUrlParams() {
   urlParams.set(new URLSearchParams(window.location.search));
