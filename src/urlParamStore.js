@@ -16,15 +16,12 @@
 
 import { writable } from 'svelte/store';
 
-export const urlParams = writable(new URLSearchParams(window.location.search));
+export const urlParams = writable(null);
 
-window.addEventListener('popstate', () => {
+export function initUrlParams() {
   urlParams.set(new URLSearchParams(window.location.search));
-});
+}
 
-window.addEventListener('hashchange', () => {
-  urlParams.set(new URLSearchParams(window.location.search));
-});
 
 
 // const observeUrlChange = () => {
