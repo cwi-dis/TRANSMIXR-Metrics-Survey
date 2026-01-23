@@ -195,18 +195,12 @@
 
 <svelte:window bind:innerHeight bind:innerWidth />
 
-<Navbar bind:clientHeight={navHeight}  fluid=true navDivClass=" items-center mx-0 flex justify-between h-12" navClass=" shadow-xl h-full bg-gradient-to-tr from-[#121212] via-[#121212]0 to-[#121212] px-2 sm:px-4 py-2.5 sticky top-0 z-20 " let:hidden let:toggle>
-	{#if condition}
-	<Button class="!p-2" on:click={() => open = !open}><FilterSolid class="w-5 h-5" /></Button>
-	{/if}
 	<div class="m-2 flex items-center">
   <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
     TRANSMIXR Metrics Survey
   </span>
 </div>
 
-
-</Navbar>
 
 	<AddEntry {detailView} {freq} addEntryInfo={structure.topView.addEntry} bind:scrollingModal={scrollingModal}/>
 
