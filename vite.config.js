@@ -9,7 +9,9 @@ import { svelte } from "@sveltejs/vite-plugin-svelte";
 //   plugins: [svelte()],
 // });
 
+
 export default defineConfig({
-  base: '',
   plugins: [svelte()],
+  base: '/TRANSMIXR-Metrics-Survey/'  // <-- set this to your repo name
 });
+
